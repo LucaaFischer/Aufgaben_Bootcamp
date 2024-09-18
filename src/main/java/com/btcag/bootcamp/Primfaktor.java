@@ -6,6 +6,5 @@ public class Primfaktor {
         Scanner eingabe = new Scanner(System.in);
         long zahl = eingabe.nextLong();
         long i = 0;
-
     }
 }
