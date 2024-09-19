@@ -10,11 +10,12 @@ public class Fibonacci_Zahlen {
 
         int zahl1 = 0;
         int zahl2 = 1;
+        int ergebnis = 0;
         System.out.print("Fibonacci-Zahlen bis " + maxZahl + ": ");
 
         while (zahl1 <= maxZahl) {
             System.out.print(zahl1 + " ");
-            int ergebnis = zahl1 + zahl2;
+            ergebnis = zahl1 + zahl2;
             zahl1 = zahl2;
             zahl2 = ergebnis;
         }

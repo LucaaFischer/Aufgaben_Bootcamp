@@ -8,16 +8,16 @@ public class ASCII {
         Scanner eingabe = new Scanner(System.in);
 
         System.out.println("Gib eine Zahl > 0 ein");
-        int größe = eingabe.nextInt();
+        int size = eingabe.nextInt();
         char stern = 42;
         int i = 0;
         int j = 0;
 
-        while (i < größe) {
+        while (i < size) {
             i++;
             j = 0;
             System.out.println();
-            while (j < größe) {
+            while (j < size) {
                 System.out.print(stern);
                 j++;
             }

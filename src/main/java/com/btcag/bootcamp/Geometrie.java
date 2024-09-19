@@ -10,7 +10,7 @@ public class Geometrie {
         System.out.println("Geben Sie den Radius des Kreises ein");
         double radius = eingabe.nextDouble();
 
-        double ergebnis = 3.14 * Math.sqrt(radius);
+        double ergebnis = 3.14 * (radius * radius);
 
         System.out.println("Kreisfläche: " + ergebnis + "^2cm");
 

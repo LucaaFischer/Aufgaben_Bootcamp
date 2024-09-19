@@ -20,15 +20,6 @@ public class ASCII2 {
                 j--;
             }
         }
-        while (i < dreieck) {
-            i++;
-            j = 0;
-            System.out.println();
-            while (j < i) {
-                System.out.print(stern);
-                j++;
-            }
-        }
         System.out.println();
         i = 0;
         while (i < dreieck) {
