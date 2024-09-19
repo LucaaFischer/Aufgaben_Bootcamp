@@ -1,0 +1,24 @@
+Value1 = 5
+Value2 = 5
+Erster Durchlauf value1 = 4
+Tmp = value2 = 5
+Erster Durchlauf tmp = 4
+Result = 1, 2, 3, 4, 
+Zweiter Durchlauf value1 = 3
+Tmp = value 2 = 5
+Zweiter Durchlauf tmp = 4
+Result = 5, 6, 7, 8, 
+Dritter Durchlauf value1 = 3
+Tmp = 5
+Dritter Durchlauf tmp = 4
+Result = 9, 10, 11, 12
+Vierter Durchlauf value1 = 2
+Tmp = 5
+Vierter Durchlauf tmp = 4
+Result = 13, 14, 15, 16
+Fünfter Durchlauf value1 = 1
+Tmp = 5
+Fünfter Durchlauf tmp = 4
+17, 18, 19, 20
+
+Das Programm multipliziert zwei Nutzereingaben – 1 von beiden Eingaben
