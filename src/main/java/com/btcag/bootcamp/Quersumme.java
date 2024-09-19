@@ -9,10 +9,10 @@ public class Quersumme {
 
         System.out.println("Geben sie eine Zahl ");
 
-        long Zahl = scanner.nextLong();
+        long zahl = scanner.nextLong();
         long ergebnis = 0;
 
-        String zahlString = Zahl + "";
+        String zahlString = zahl + "";
 
         int length = zahlString.length();
 

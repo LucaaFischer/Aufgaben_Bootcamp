@@ -8,10 +8,15 @@ public class Primzahl {
         System.out.println("Gib eine Zahl ein");
         long zahl = eingabe.nextLong();
         long i = 0;
-        if (zahl % zahl == 0 && zahl % 1 == 0) {
-            System.out.println("Die Zahl ist eine Primzahl");
-        } else {
-            System.out.println("Die Zahl ist keine Primzahl");
+        long divider = 1;
+        String ergebnis = "Primzahl";
+
+        while (zahl % divider == 0) {
+            while (zahl != divider) {
+                ergebnis = "Keine Primzahl";
+                divider++;
+            }
         }
+        System.out.println(ergebnis);
     }
 }

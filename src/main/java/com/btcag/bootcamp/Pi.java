@@ -7,6 +7,7 @@ public class Pi {
         Scanner eingabe = new Scanner(System.in);
         double i = 3;
         double pi = 0;
+        double ergebnis = 0;
 
         System.out.println("Wie viele Durchläufe sollen erfolgen?");
         long runs = eingabe.nextLong();
@@ -14,11 +15,13 @@ public class Pi {
 
         while (maxruns < runs) {
             while (maxruns % 2 == 0) {
-                pi = 4 * (1 + (1 / i));
+                ergebnis = 4 * (1 + (1 / i));
+                pi = ergebnis;
                 maxruns++;
             }
             while (maxruns % 2 != 0) {
-                pi = 4 * (1 - (1 / i));
+                ergebnis = 4 * (1 + (1 / i));
+                pi = ergebnis;
                 maxruns++;
             }
             i = i + 2;
