@@ -1,4 +1,5 @@
 package com.btcag.bootcamp;
+
 import java.util.Scanner;
 
 public class backwards {
@@ -14,7 +15,7 @@ public class backwards {
         System.out.println("Bitte gib die Zahl nochmal ein");
         alsLong = eingabe.nextLong();
 
-        while(alsLong > 0) {
+        while (alsLong > 0) {
             umgekehrt = umgekehrt * 10 + alsLong % 10;
             alsLong = alsLong / 10;
         }

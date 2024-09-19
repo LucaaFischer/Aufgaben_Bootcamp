@@ -11,34 +11,34 @@ public class ASCII2 {
         char stern = 42;
         int i = 0;
         int j = 0;
-        while(i < dreieck) {
+        while (i < dreieck) {
             i++;
-            j= dreieck;
+            j = dreieck;
             System.out.println();
             while (j >= i) {
                 System.out.print(stern);
                 j--;
             }
         }
-            while (i < dreieck) {
-                i++;
-                j = 0;
-                System.out.println();
-                while (j < i) {
-                    System.out.print(stern);
-                    j++;
-                }
-            }
+        while (i < dreieck) {
+            i++;
+            j = 0;
             System.out.println();
-            i = 0;
-            while (i < dreieck) {
-                i++;
-                j = 0;
-                System.out.println();
-                while (j < i) {
-                    System.out.print(stern);
-                    j++;
+            while (j < i) {
+                System.out.print(stern);
+                j++;
             }
         }
+        System.out.println();
+        i = 0;
+        while (i < dreieck) {
+            i++;
+            j = 0;
+            System.out.println();
+            while (j < i) {
+                System.out.print(stern);
+                j++;
+            }
         }
+    }
 }

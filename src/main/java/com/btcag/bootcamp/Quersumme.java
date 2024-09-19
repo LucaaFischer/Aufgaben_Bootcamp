@@ -1,4 +1,5 @@
 package org.example;
+
 import java.util.Scanner;
 
 public class Quersumme {
@@ -24,4 +25,4 @@ public class Quersumme {
 
         System.out.println("Die Quersumme ist: " + ergebnis);
     }
-    }
+}

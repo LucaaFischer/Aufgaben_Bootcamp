@@ -30,7 +30,7 @@ public class ASCII {
         int dreieck = eingabe.nextInt();
         i = 0;
         j = 0;
-        while(i < dreieck ) {
+        while (i < dreieck) {
             i++;
             j = 0;
             System.out.println();

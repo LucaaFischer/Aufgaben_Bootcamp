@@ -1,4 +1,5 @@
 package com.btcag.bootcamp;
+
 import java.util.Scanner;
 
 public class Primzahl {
@@ -7,10 +8,9 @@ public class Primzahl {
         System.out.println("Gib eine Zahl ein");
         long zahl = eingabe.nextLong();
         long i = 0;
-        if(zahl % zahl == 0 && zahl % 1 == 0) {
+        if (zahl % zahl == 0 && zahl % 1 == 0) {
             System.out.println("Die Zahl ist eine Primzahl");
-        }
-        else{
+        } else {
             System.out.println("Die Zahl ist keine Primzahl");
         }
     }
