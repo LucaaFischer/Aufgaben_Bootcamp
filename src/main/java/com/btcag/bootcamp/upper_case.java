@@ -10,16 +10,25 @@ public class upper_case {
 
         String illegal = lowerCase.toUpperCase();
         System.out.println(illegal);
+        String output = "";
 
+        char conversion;
         int i = 0;
         int length = lowerCase.length();
-        char[] lowerChars = lowerCase.toCharArray();
+        char currChar;
+        int ascii = 0;
 
-        while(i< length) {
-            char lowerChar = lowerChars[i];
-            System.out.print(lowerChars);
+        while(i < length) {
+            currChar = lowerCase.charAt(i);
+            ascii = (int) currChar;
+            while (ascii > 90) {
+                ascii -= 32;
+            }
+            conversion = (char) ascii;
+            output = output + conversion;
             i++;
         }
+        System.out.println(output);
     }
 }
 
