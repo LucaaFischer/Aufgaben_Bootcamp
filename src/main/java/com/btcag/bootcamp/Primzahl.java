@@ -6,14 +6,13 @@ public class Primzahl {
     public static void main(String[] args) {
         Scanner eingabe = new Scanner(System.in);
         System.out.println("Gib eine Zahl ein");
-        int zahl = eingabe.nextInt();
+        long zahl = eingabe.nextLong();
         int divider = 2;
         boolean prime = true;
 
-        while(zahl % divider == 0 && zahl != divider) {
-            prime = false;
-            divider++;
-        }
+        if(zahl % divider == 0 && zahl != divider) {
+                prime = false;
+            }
         System.out.println("Ergebnis: " + prime);
     }
 }

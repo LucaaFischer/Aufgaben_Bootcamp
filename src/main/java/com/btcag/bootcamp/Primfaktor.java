@@ -6,17 +6,19 @@ public class Primfaktor {
     public static void main(String[] args) {
         Scanner eingabe = new Scanner(System.in);
         System.out.println("Gib eine Zahl ein");
-        long zahl = eingabe.nextLong();
-        long i = 0;
-        long divider = 1;
-        String ergebnis = "Primzahl";
+        int zahl = eingabe.nextInt();
+        int divider = 2;
+        int prime = 0;
+        int[] result;
 
-        while (zahl % divider == 0) {
-            while (zahl != divider) {
-                ergebnis = "Keine Primzahl";
-                divider++;
-            }
+        // while (zahl % divider == 0) {
+          //  while(zahl != divider) {
+              //  prime = zahl % divider;
+                //divider++;
+            //    result = prime[divider];
+       //     }
         }
-        System.out.println(ergebnis);
-    }
+        //System.out.println("Die Zahl " + zahl + " kann in folgende Faktoren zerlegt werden: " + result);
+    //}
 }
+
