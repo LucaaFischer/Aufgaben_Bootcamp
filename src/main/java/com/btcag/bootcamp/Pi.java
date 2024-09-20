@@ -5,27 +5,27 @@ import java.util.Scanner;
 public class Pi {
     public static void main(String[] args) {
         Scanner eingabe = new Scanner(System.in);
-        double i = 3;
+        double i = 1;
         double pi = 0;
-        double ergebnis = 0;
+        double ergebnis = 1;
 
         System.out.println("Wie viele Durchläufe sollen erfolgen?");
-        long runs = eingabe.nextLong();
-        long maxruns = 0;
+        long maxruns = eingabe.nextLong();
+        long runs = 0;
 
-        while (maxruns < runs) {
-            while (maxruns % 2 == 0) {
-                ergebnis = 4 * (1 + (1 / i));
+        while (runs < maxruns) {
+            while (runs % 2 == 0) {
+                ergebnis = 4 * (1 - (1 / i));
                 pi = ergebnis;
-                maxruns++;
+                runs++;
+                i = i+2;
             }
-            while (maxruns % 2 != 0) {
-                ergebnis = 4 * (1 + (1 / i));
+            while (runs % 2 != 0) {
+                ergebnis =  4 * (1 + (1/ i));
                 pi = ergebnis;
-                maxruns++;
+                runs++;
+                i=i+2;
             }
-            i = i + 2;
-            maxruns++;
         }
         System.out.println("Nach " + runs + " Durchläufen wurde Pi auf den Wert " + pi + " berechnet.");
     }

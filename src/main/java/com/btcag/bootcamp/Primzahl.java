@@ -8,14 +8,20 @@ public class Primzahl {
         System.out.println("Gib eine Zahl ein");
         long zahl = eingabe.nextLong();
         int divider = 2;
-        boolean prime = false;
+        boolean prime = true;
+        boolean dontSkip = true;
 
-        while(zahl > 1) {
+        while (divider < zahl) {
+            dontSkip = true;
             while (zahl % divider == 0) {
-                prime = true;
-                zahl = zahl / divider;
+                prime = false;
+                divider++;
+                dontSkip = false;
             }
-            divider++;
+            while (dontSkip) {
+                dontSkip = false;
+                divider++;
+            }
         }
         System.out.println("Ergebnis: " + prime);
     }
