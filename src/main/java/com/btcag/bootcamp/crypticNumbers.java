@@ -8,12 +8,14 @@ public class crypticNumbers {
 
         System.out.println("Bitte die Zahl eingeben");
         long zahl = input.nextLong();
-        System.out.println(zahl);
 
         System.out.println("Bitte Passwort-Zahl eingeben");
         long pw = input.nextLong();
-        System.out.println(pw);
 
-        long result = 0;
+        long result = zahl ^ pw;
+        System.out.println("Result: " + result);
+
+        long goBack = result ^ pw;
+        System.out.println("Ursprungszahl: " + goBack);
     }
 }

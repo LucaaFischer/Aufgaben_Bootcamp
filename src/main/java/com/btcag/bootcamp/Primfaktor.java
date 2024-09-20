@@ -7,22 +7,16 @@ public class Primfaktor {
         Scanner eingabe = new Scanner(System.in);
         System.out.println("Gib eine Zahl ein");
         long zahl = eingabe.nextLong();
-        int divider = 2;
-        boolean prime = true;
-        int i = 0;
-        long ergebnis = 0;
+        long divider = 2;
 
-        if (zahl % divider == 0 && zahl != divider) {
-            prime = false;
-        }
-        if (prime) {
-            while (i < zahl) {
-                ergebnis = zahl / divider;
-                i++;
-                String[] output = (String[]) ergebnis[i];
+        System.out.print("Die Zahl " + zahl + "kann in folgende Faktoren zerlegt werden: ");
+        while(zahl > 1) {
+            while (zahl % divider == 0) {
+                System.out.print(divider + ", ");
+                zahl = zahl / divider;
             }
+            divider++;
         }
-        System.out.println("Ergebnis: " + ergebnis);
     }
 }
 
