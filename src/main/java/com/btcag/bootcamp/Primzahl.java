@@ -10,9 +10,9 @@ public class Primzahl {
         int divider = 2;
         boolean prime = true;
 
-        if(zahl % divider == 0 && zahl != divider) {
-                prime = false;
-            }
+        if (zahl % divider == 0 && zahl != divider) {
+            prime = false;
+        }
         System.out.println("Ergebnis: " + prime);
     }
 }

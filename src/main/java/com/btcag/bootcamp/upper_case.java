@@ -18,7 +18,7 @@ public class upper_case {
         char currChar;
         int ascii = 0;
 
-        while(i < length) {
+        while (i < length) {
             currChar = lowerCase.charAt(i);
             ascii = (int) currChar;
             while (ascii > 90) {
