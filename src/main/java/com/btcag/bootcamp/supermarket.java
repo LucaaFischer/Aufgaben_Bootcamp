@@ -12,8 +12,9 @@ public class supermarket {
         long gegeben = 0;
         double change = 0;
         double eurogegeben = 0;
-        double schein = 500;
+        double[] schein = {500, 200, 100, 50, 20, 10, 5, 2, 1, 0.50, 0.20, 0.10, 0.05, 0.02, 0.01};
         int i = 0;
+        int j = 0;
 
         while (produkte != 0) {
             produkte = input.nextLong();
@@ -26,13 +27,17 @@ public class supermarket {
         gegeben = input.nextLong();
         eurogegeben = (double) gegeben / 100;
         change = eurogegeben - euro;
-        System.out.println("Bitte folgendes Geld zurückgeben: (" + change / 100 + " Euro)");
+        System.out.println("Bitte folgendes Geld zurückgeben: (" + change + " Euro)");
 
-        while (change > schein ) {
-            change = schein / change;
+        while(i <= 14) {
+            while (change >= schein[i]) {
+                change = change - schein[i];
+                j++;
+            }
+            System.out.println(j + " x " + schein[i] + " Euro");
             i++;
-            System.out.println(i + " x " + schein + " Euro");
-            schein /= schein;
+            j = 0;
         }
     }
 }
+
