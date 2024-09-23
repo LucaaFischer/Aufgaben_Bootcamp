@@ -1,4 +1,5 @@
 package com.btcag.bootcamp;
+
 import java.util.Scanner;
 
 public class supermarket {
@@ -11,9 +12,10 @@ public class supermarket {
         long gegeben = 0;
         double change = 0;
         double eurogegeben = 0;
-        double ausgabe = 0;
+        double schein = 500;
+        int i = 0;
 
-        while(produkte != 0) {
+        while (produkte != 0) {
             produkte = input.nextLong();
             sum += produkte;
         }
@@ -24,10 +26,13 @@ public class supermarket {
         gegeben = input.nextLong();
         eurogegeben = (double) gegeben / 100;
         change = eurogegeben - euro;
-        System.out.println("Bitte folgendes Geld zurückgeben: (" + change + ")");
+        System.out.println("Bitte folgendes Geld zurückgeben: (" + change / 100 + " Euro)");
 
-        while(ausgabe < change) {
-
+        while (change > schein ) {
+            change = schein / change;
+            i++;
+            System.out.println(i + " x " + schein + " Euro");
+            schein /= schein;
         }
     }
 }
