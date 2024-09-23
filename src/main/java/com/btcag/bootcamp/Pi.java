@@ -14,19 +14,17 @@ public class Pi {
         long runs = 0;
 
         while (runs < maxruns) {
+            i = i+2;
             while (runs % 2 == 0) {
-                ergebnis = 4 * (1 - (1 / i));
-                pi = ergebnis;
+                ergebnis *= 1.0 + (1.0 / i);
                 runs++;
-                i = i+2;
             }
             while (runs % 2 != 0) {
-                ergebnis =  4 * (1 + (1/ i));
-                pi = ergebnis;
+                ergebnis *= 1.0 - (1.0 / i);
                 runs++;
-                i=i+2;
             }
         }
+        pi = 4* ergebnis;
         System.out.println("Nach " + runs + " Durchläufen wurde Pi auf den Wert " + pi + " berechnet.");
     }
 }
