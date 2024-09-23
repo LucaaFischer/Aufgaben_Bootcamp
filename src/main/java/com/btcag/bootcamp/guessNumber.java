@@ -16,7 +16,7 @@ public class guessNumber {
         int inBit = input.nextInt();
         long bitShift = (long) 1 << inBit;
         long maxNumb = bitShift - 1;
-        long randNumber = random.nextLong(maxNumb);
+        long randNumber = random.nextLong(0, maxNumb);
 
         // System.out.println(bitShift + " " + randNumber +  " " + maxNumb);
 
