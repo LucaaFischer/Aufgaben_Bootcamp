@@ -13,8 +13,8 @@ public class supermarket {
         double change = 0;
         double eurogegeben = 0;
         double[] schein = {500, 200, 100, 50, 20, 10, 5, 2, 1, 0.50, 0.20, 0.10, 0.05, 0.02, 0.01};
-        int i = 0;
-        int j = 0;
+        int i = 0; // für aktuellen Index im Array
+        int j = 0; // Um Anzahl der Scheine zu zählen
 
         while (produkte != 0) {
             produkte = input.nextLong();

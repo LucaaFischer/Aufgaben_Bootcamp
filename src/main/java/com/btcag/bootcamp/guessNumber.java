@@ -9,7 +9,6 @@ public class guessNumber {
         Random random = new Random();
 
         int i = 1;
-        boolean loopbreaker = true;
         long guess = 0;
 
         System.out.println("Bitte gebe die Zahlengröße in Bits an: ");
@@ -21,17 +20,17 @@ public class guessNumber {
         // System.out.println(bitShift + " " + randNumber +  " " + maxNumb);
 
         while (guess != randNumber) {
-            loopbreaker = true;
-            while (guess < randNumber && guess != 0 && loopbreaker) {
+            System.out.println(i + ". Versuch: Bitte eine Zahl im Bereich von 0 und " + maxNumb + " angeben: ");
+            guess = input.nextLong();
+            boolean loopbreaker = true;
+            while (guess < randNumber && loopbreaker) {
                 System.out.println("Die gesuchte Zahl ist größer!");
                 loopbreaker = false;
             }
-            while (guess > randNumber && guess != 0 && loopbreaker) {
+            while (guess > randNumber && loopbreaker) {
                 System.out.println("Die gesuchte Zahl ist kleiner!");
                 loopbreaker = false;
             }
-            System.out.println(i + ". Versuch: Bitte eine Zahl im Bereich von 0 und " + maxNumb + " angeben: ");
-            guess = input.nextLong();
             i++;
         }
         System.out.println("Super!");
